@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                     value = 0.0
                 )
 
-                post!!.conversion_ratesonversions.forEach { codes ->
+                post!!.conversion_ratesonversions!!.forEach { codes ->
                     moneda.code = codes.key
                     moneda.value = codes.value
                     txt.append(moneda.code + "  " + moneda.value.toString() + "\n")
