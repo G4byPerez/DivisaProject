@@ -30,7 +30,7 @@
         </activity>
 
         <provider
-            android:authorities="com.gabyperez.divisaserve"
+            android:authorities="com.gabyperez.divisaserver"
             android:name=".others.Provider"
             android:enabled="true"
             android:exported="true" />
