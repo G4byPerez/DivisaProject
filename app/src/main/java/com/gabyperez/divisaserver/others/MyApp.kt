@@ -6,7 +6,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
 class MyApp : Application() {
-    val applicationScope = CoroutineScope(SupervisorJob())
+    private val applicationScope = CoroutineScope(SupervisorJob())
 
     val database by lazy { MonedaDB.getDatabase(this, applicationScope) }
     val repositoryMoneda by lazy {  MonedaRepository (database.MonedaDAO()) }

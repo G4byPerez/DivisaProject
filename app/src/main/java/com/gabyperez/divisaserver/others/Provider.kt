@@ -43,9 +43,14 @@ class Provider : ContentProvider() {
             //query
             2 -> {
 
+
             }
             //query / update  /  delete
             3 -> {
+                /*p0.lastPathSegment
+                cursor = p0.getQueryParameter("code")?.let {
+                    db.MonedaDAO().getByCodeCursor(it)
+                }*/
 
             }
             else -> {
